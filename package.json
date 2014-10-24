@@ -1,7 +1,7 @@
 {
-  "name": "FreeUKGenealogy-Project-Template",
+  "name": "FreeUKGenealogy-Free-Reg",
   "version": "1.0.0",
-  "description": "Frontend resources for Free UK Genealogy the Project Template",
+  "description": "Frontend resources for Free UK Genealogy Free Reg project",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
