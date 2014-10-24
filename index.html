@@ -52,50 +52,17 @@
 <body ontouchstart class="offcanvas  offcanvas--rev">
 
   <style media="screen">
-    /* These are just here to make this example ui page look nice */
+    /* This is just here for the purposes of the ui page */
     .sep {
       margin-top: 120px;
       margin-bottom: 72px;
     }
-    .offcanvas__secondary {
-      z-index: 1;
-    }
-    .offcanvas__secondary ul {
-      margin-top: 0;
-      background: #f4f4f4;
-    }
-    .offcanvas__secondary a {
-      background: #f4f4f4;
-      text-transform: uppercase;
-      color: #a1185a;
-      font-weight: bold;
-      padding: 12px;
-    }
-    .offcanvas__secondary a:active,
-    .offcanvas__secondary a:hover {
-      background: #e2e2e2;
-    }
-    .example-site-header {
-      height: 60px;
-    }
-    @media only screen and (min-width : 571px) {
-      .example-site-header {
-        display: none;
-      }
-      .offcanvas__secondary ul {
-        width: 100%;
-        text-align: center;
-      }
-      .offcanvas__secondary li {
-        display: inline-block;
-      }
-    }
-
   </style>
 
-  <div class="offcanvas__secondary">
+
+  <div class="site__header__nav  offcanvas__secondary">
     <nav role="navigation">
-      <ul class="nav  nav--stacked">
+      <ul>
         <li><a href="#">About</a></li>
         <li><a href="#">Become a volenteer</a></li>
         <li><a href="#">Donate</a></li>
@@ -106,14 +73,24 @@
 
 
   <div class="offcanvas__primary">
-    <header class="example-site-header" role="banner">
-      <button type="button" id="trigger-offcanvas" class="site__header__menu-btn">
-        <span>Menu</span>
-        <i class="icon__cancel" aria-hidden="true"></i>
-      </button>
+    <header class="site__header" role="banner">
+      <div class="container">
+        <div class="banner-horz">
+          <img src="http://dummyimage.com/728x90/000/fff/?text=banner+ad">
+        </div>
+
+        <button type="button" id="trigger-offcanvas" class="site__header__menu-btn">
+          <span>Menu</span>
+          <i class="icon__cancel" aria-hidden="true"></i>
+        </button>
+
+        <a href="#" class="site__header__logo  icon__freereg"><h1 class="accessibility">FreeReg</h1></a>
+
+        <a href="#" class="site__header__freeukgen-logo  icon__freeukgen__project--dark"><span class="accessibility">A project by FreeUKGenealogy</span></a>
+      </div>
     </header>
 
-    <main role="main" class="icon__honeycomb--top-right">
+    <main role="main" class="site__content  icon__honeycomb--top-right">
 
       <div class="container">
 
@@ -569,6 +546,74 @@
       </div>
 
     </main>
+
+
+
+
+    <h1 class="title  sep  container">Site Footer</h1>
+
+    <footer class="site__footer">
+
+      <div class="island  island--magenta  flush--bottom">
+        <div class="container  text--center">
+          <p>The FreeREG database is just a finding tool. It should not be considered to be *proof*, <br> nor that it is 100% accurate, nor contains all of the information in the actual register.</p>
+          <p>Once you have found a record, always make a point of looking at the actual register on microfiche/film at <br>a County Record Office or the local Family History Society or LDS family History Centre for confirmation.</p>
+        </div>
+      </div>
+
+      <div class="icon__honeycomb--bottom-left  island  flush--bottom">
+        <div class="container  text--center">
+          <h3 class="epsilon  text--navy">Other FreeUkGenealogy</h3>
+
+          <ul class="icon-list">
+            <li><a href="#" class="icon__freecen"><span class="accessibility">FreeCen</span></a></li>
+            <li><a href="#" class="icon__freebmd"><span class="accessibility">FreeBMD</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="island  island--dark  flush--bottom  milli  text--white">
+        <div class="container">
+          <div class="grid">
+
+            <div class="grid__item  one-quarter  palm-one-third">
+              <ul class="nav  nav--stacked  lap-and-up-flush--bottom">
+                <li><a href="#">Terms &amp; conditions</a></li>
+                <li><a href="#">Usage policy</a></li>
+                <li><a href="#">Company details</a></li>
+              </ul>
+            </div>
+
+            <div class="grid__item  one-quarter  palm-one-third">
+              <ul class="nav  nav--stacked  lap-and-up-flush--bottom">
+                <li><a href="#">Become a transcriber</a></li>
+                <li><a href="#">Help with transcribing</a></li>
+                <li><a href="#">Stats and info</a></li>
+              </ul>
+            </div>
+
+            <div class="grid__item  one-quarter  palm-one-third">
+              <ul class="nav  nav--stacked  lap-and-up-flush--bottom">
+                <li><a href="#">Donate</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+
+            <div class="grid__item  one-quarter  palm-one-whole">
+              <a href="#" class="icon__freeukgen__project--light"><span class="accessibility">A project by FreeUKGenealogy</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="island  island--grey  flush--bottom">
+        <div class="container  text--center">
+          <p class="micro  text--grey">Search engine, layout and database Copyright © 1998-2013 The Trustees of Free UK Genealogy (Ben Laurie, Graham Hart, Camilla von Massenbach, David Mayall and Jim Killock), a charity registered in England and Wales, Number 1096940. We make no warranty whatsoever as to the accuracy or completeness of the FreeBMD data.</p>
+        </div>
+      </div>
+    </footer>
 
   </div>
 
