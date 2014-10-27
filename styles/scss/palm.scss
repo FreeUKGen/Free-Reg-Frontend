@@ -12,13 +12,6 @@
 
 
 /**
- * Slient classes used for extending further down
- */
-%nav          { @extend .nav; }
-%nav--stacked { @extend .nav--stacked; }
-
-
-/**
  * Site header
  */
 .site__header {
