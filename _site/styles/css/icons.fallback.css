@@ -95,11 +95,23 @@
 
 
 
+.icon__cancel--brighter {
+  background-image: url('../../images/png/cancel--brighter.png');
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+ *display: inline;
+  zoom: 1;
+}
+
+
+
 .icon__cancel {
   background-image: url('../../images/png/cancel.png');
   background-repeat: no-repeat;
-  width: 23px;
-  height: 23px;
+  width: 22px;
+  height: 22px;
   display: inline-block;
  *display: inline;
   zoom: 1;
