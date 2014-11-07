@@ -94,7 +94,7 @@
 }
 
 
-
+.icon__cancel:hover,.icon__cancel:active,
 .icon__cancel--brighter {
   background-image: url('../../images/png/cancel--brighter.png');
   background-repeat: no-repeat;
@@ -286,7 +286,7 @@
 }
 
 
-
+.icon__reply:hover,.icon__reply:active,
 .icon__reply--dark {
   background-image: url('../../images/png/reply--dark.png');
   background-repeat: no-repeat;
@@ -310,7 +310,7 @@
 }
 
 
-
+.icon__repost:hover,.icon__repost:active,
 .icon__repost--dark {
   background-image: url('../../images/png/repost--dark.png');
   background-repeat: no-repeat;
@@ -370,7 +370,7 @@
 }
 
 
-
+.icon__star:hover,.icon__star:active,
 .icon__star--dark {
   background-image: url('../../images/png/star--dark.png');
   background-repeat: no-repeat;

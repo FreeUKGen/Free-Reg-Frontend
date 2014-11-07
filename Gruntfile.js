@@ -95,13 +95,15 @@ module.exports = function(grunt) {
         }],
         options: {
           pngfolder: '../../images/png',
+          // add more hover styles here following this pattern
+          customselectors: {
+            "reply--dark" : [".icon__reply:hover",".icon__reply:active"],
+            "repost--dark" : [".icon__repost:hover",".icon__repost:active"],
+            "star--dark" : [".icon__star:hover",".icon__star:active"],
+            "cancel--brighter" : [".icon__cancel:hover",".icon__cancel:active"]
+          },
           cssprefix: '.icon__',
-          template: 'bower_components/FreeUKGenealogy-Core-Frontend/grunticon.hbs',
-          // to use colours, add more options here and then modify your src
-          // filenames to follow this pattern: filename.colors-white-red.svg
-          colors: {
-            white: "#ffffff"
-          }
+          template: 'bower_components/FreeUKGenealogy-Core-Frontend/grunticon.hbs'
         }
       }
     },
