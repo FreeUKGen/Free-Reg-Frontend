@@ -67,7 +67,7 @@
     }
 
     nav {
-      @include container(960px);
+      @include container($container-width);
     }
 
     ul {
