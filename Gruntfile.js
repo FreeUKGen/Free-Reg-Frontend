@@ -100,7 +100,12 @@ module.exports = function(grunt) {
             "reply--dark" : [".icon__reply:hover",".icon__reply:active"],
             "repost--dark" : [".icon__repost:hover",".icon__repost:active"],
             "star--dark" : [".icon__star:hover",".icon__star:active"],
-            "cancel--brighter" : [".icon__cancel:hover",".icon__cancel:active"]
+            "cancel--brighter" : [".icon__cancel:hover",".icon__cancel:active"],
+            "youtube--dark" : [".icon__youtube:hover",".icon__youtube:active"],
+            "googleplus--dark" : [".icon__googleplus:hover",".icon__googleplus:active"],
+            "facebook--dark" : [".icon__facebook:hover",".icon__facebook:active"],
+            "github--dark" : [".icon__github:hover",".icon__github:active"],
+            "rss--dark" : [".icon__rss:hover",".icon__rss:active"]
           },
           cssprefix: '.icon__',
           template: 'bower_components/FreeUKGenealogy-Core-Frontend/grunticon.hbs'
