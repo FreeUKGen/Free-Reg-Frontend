@@ -84,7 +84,7 @@
 
   .site__header__freeukgen-logo {
     margin: 0 auto $base-spacing-unit auto;
-    display: block !important;
+    display: block;
   }
 
 
@@ -94,21 +94,33 @@
   .site__header__nav {
     z-index: 1;
 
-    ul {
-      @extend %nav;
-      @extend %nav--stacked;
-      margin-top: 0;
+    .main-nav {
+
+      ul {
+        @extend %nav;
+        @extend %nav--stacked;
+        margin-top: 0;
+      }
+
+      a {
+        background: $light;
+        text-transform: uppercase;
+        color: $magenta;
+        font-weight: bold;
+        padding: $base-spacing-unit / 2;
+        &:active,
+        &:hover {
+          background: #e2e2e2;
+        }
+      }
+
     }
 
-    a {
-      background: $light;
-      text-transform: uppercase;
-      color: $magenta;
-      font-weight: bold;
-      padding: $base-spacing-unit / 2;
-      &:active,
-      &:hover {
-        background: #e2e2e2;
+    .social-links {
+      display: none;
+
+      ul {
+        @extend %nav;
       }
     }
 
