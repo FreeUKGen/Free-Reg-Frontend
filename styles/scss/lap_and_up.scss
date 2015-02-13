@@ -132,6 +132,7 @@
 
         background: none;
         color: #fff;
+        color: rgba(255, 255, 255, 0.9);
 
         @include manual-media-query(800px) {
           @include font-size(16px, false);
@@ -140,7 +141,7 @@
         &:active,
         &:hover {
           background: none;
-          color: $magenta-brighter;
+          color: #fff;
         }
 
       }
